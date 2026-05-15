@@ -1,4 +1,4 @@
-# 🩺 Diabetes Risk Predictor
+# Diabetes Risk Predictor
 
 A Machine Learning web application that predicts diabetes risk based on clinical data, built using **Random Forest** and deployed with **Streamlit**.
 
@@ -18,7 +18,7 @@ A Machine Learning web application that predicts diabetes risk based on clinical
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 **1. Clone the repository**
 ```bash
@@ -35,7 +35,12 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+--- 
 
+## Key Insights from EDA
+- **Zero Values:** Identified and handled missing values (zeros) in critical features like Insulin, BMI, and Glucose using Median Imputation based on the target class.
+- **Top Features:** Glucose and BMI showed the highest correlation with diabetes risk.
+- **Model Choice:** While XGBoost had slightly higher accuracy, **Random Forest** was prioritized for its superior Recall, ensuring we capture as many true positive cases as possible.
 ---
 
 ## 📊 Models Compared
