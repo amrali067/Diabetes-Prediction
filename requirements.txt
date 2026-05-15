@@ -4,5 +4,4 @@ xgboost
 joblib
 numpy
 pandas
-matplotlib.pyplot
-seaborn 
+matplotlib
